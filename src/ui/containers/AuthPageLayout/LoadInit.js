@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { getToken } from 'epics/utils';
+import { getToken } from 'utils';
 
 const LoadInit = () => {
   // check logged in

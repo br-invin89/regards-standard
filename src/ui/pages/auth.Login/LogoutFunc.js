@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeToken } from 'epics/utils';
+import { removeToken } from 'utils';
 import {
   useHistory
 } from 'react-router-dom';

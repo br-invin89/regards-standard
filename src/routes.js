@@ -3,9 +3,9 @@ import {
   BrowserRouter, Route, Switch, Redirect
 } from 'react-router-dom';
 
-import HomePage from './pages/Home';
-import LoginPage from './pages/auth.Login';
-import LogoutFunc from './pages/auth.Login/LogoutFunc';
+import HomePage from 'ui/pages/Home';
+import LoginPage from 'ui/pages/auth.Login';
+import LogoutFunc from 'ui/pages/auth.Login/LogoutFunc';
 
 const AppRouters = () => (
   <BrowserRouter>

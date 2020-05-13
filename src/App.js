@@ -1,5 +1,5 @@
 import React from 'react';
-import AppRoutes from './ui/routes';
+import AppRoutes from './routes';
 import 'antd/dist/antd.css';
 import { Provider } from 'react-redux';
 import store from 'epics/store';

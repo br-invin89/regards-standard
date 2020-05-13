@@ -1,7 +1,7 @@
 import axios from 'axios';
 import store from 'epics/store';
 import { baseUrl } from 'config/api';
-import { getToken } from 'epics/utils';
+import { getToken } from 'utils';
 
 const callApi = (method, needAuth, path, data, doneCallback, failCallback) => {
   let options = {};

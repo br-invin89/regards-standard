@@ -9,7 +9,7 @@ import {
 import { useHistory } from 'react-router-dom';
 import { FormContainerStyled as Container } from './styled';
 import { formLayout, actionLayout } from './const';
-import { callPostApi, saveToken } from 'epics/utils';
+import { callPostApi, saveToken } from 'utils';
 
 const LoginForm = (props) => {
   const history = useHistory();
