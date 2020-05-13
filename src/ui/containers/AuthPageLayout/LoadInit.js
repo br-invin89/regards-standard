@@ -1,6 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { getToken } from 'utils';
+import { getToken } from 'utils/auth';
 
 const LoadInit = () => {
   // check logged in

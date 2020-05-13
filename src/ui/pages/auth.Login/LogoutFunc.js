@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { removeToken } from 'utils';
+import { removeToken } from 'utils/auth';
 import {
   useHistory
 } from 'react-router-dom';

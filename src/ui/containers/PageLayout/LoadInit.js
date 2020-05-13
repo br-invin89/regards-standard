@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useDispatch } from 'react-redux';
-import { callGetApiWithAuth } from 'utils';
+import { callGetApiWithAuth } from 'utils/api';
 
 const LoadInit = () => {
 	const dispatch = useDispatch();

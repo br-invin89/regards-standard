@@ -9,7 +9,8 @@ import {
 import { useHistory } from 'react-router-dom';
 import { FormContainerStyled as Container } from './styled';
 import { formLayout, actionLayout } from './const';
-import { callPostApi, saveToken } from 'utils';
+import { saveToken } from 'utils/auth';
+import { callPostApi } from 'utils/api';
 
 const LoginForm = (props) => {
   const history = useHistory();
