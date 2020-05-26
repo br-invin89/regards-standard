@@ -1,55 +1,52 @@
-import React from 'react';
-import {
-  Form,
-  Button,
-  Input,
-  Typography,
-  message
-} from 'antd';
-import { useHistory } from 'react-router-dom';
-import { FormContainerStyled as Container } from './styled';
-import { formLayout, actionLayout } from './const';
-import { saveToken } from 'utils/auth';
-import { callPostApi } from 'utils/api';
+import React from 'react'
+import { Form, Button, Input, Typography, message } from 'antd'
+import { useHistory } from 'react-router-dom'
+import { FormContainerStyled as Container } from './styled'
+import { formLayout, actionLayout } from './const'
+import { saveToken } from 'utils/auth'
+import { callPostApi } from 'utils/api'
 
 const LoginForm = (props) => {
-  const history = useHistory();
-  const onTryLogin = formData => {
-    message.loading('Logging now...', 0);
-    callPostApi('auth/signin', formData, onLoginSuccess, onLoginFailure);
+  const history = useHistory()
+  const onTryLogin = (formData) => {
+    message.loading('Logging now...', 0)
+    callPostApi('auth/signin', formData, onLoginSuccess, onLoginFailure)
   }
-  const onLoginSuccess = data => {
-    saveToken(data.token);
-    message.destroy();
-    message.success('Logged in Successfully', 0.5);
+  const onLoginSuccess = (data) => {
+    saveToken(data.token)
+    message.destroy()
+    message.success('Logged in Successfully', 0.5)
     setTimeout(() => {
-      history.push('/');
-    }, 1500);
+      history.push('/')
+    }, 1500)
   }
-  const onLoginFailure = errorMessage => {
-    message.destroy();
-    message.error(errorMessage, 2.5);
+  const onLoginFailure = (errorMessage) => {
+    message.destroy()
+    message.error(errorMessage, 2.5)
   }
-  const onInvalidate = errorInfo => {
-    console.error('Validation error: ', errorInfo);
-  }  
+  const onInvalidate = (errorInfo) => {
+    console.error('Validation error: ', errorInfo)
+  }
 
   return (
     <Container>
-      <Form {...formLayout}
+      <Form
+        {...formLayout}
         name="loginForm"
         onFinish={onTryLogin}
         onFinishFailed={onInvalidate}
       >
         <Typography.Title level={3}>Login Form!</Typography.Title>
         <Form.Item
-          label="Username" name="username"
+          label="Username"
+          name="username"
           rules={[{ required: true, message: 'Please input your username!' }]}
         >
           <Input />
         </Form.Item>
         <Form.Item
-          label="Password" name="password"
+          label="Password"
+          name="password"
           rules={[{ required: true, message: 'Please input your password!' }]}
         >
           <Input.Password />
@@ -64,4 +61,4 @@ const LoginForm = (props) => {
   )
 }
 
-export default React.memo(LoginForm);
+export default React.memo(LoginForm)

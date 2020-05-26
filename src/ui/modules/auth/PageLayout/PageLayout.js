@@ -1,20 +1,17 @@
-import React from 'react';
+import React from 'react'
 import {
   LayoutContainerStyled as LayoutContainer,
-  PageContentContainerStyled as PageContentContainer
-} from './styled';
-import LoadInit from './LoadInit';
+  PageContentContainerStyled as PageContentContainer,
+} from './styled'
+import LoadInit from './LoadInit'
 
 const PageLayout = ({ children, ...props }) => {
-
   return (
     <LayoutContainer {...props}>
       <LoadInit />
-      <PageContentContainer>
-        {children}
-      </PageContentContainer>
+      <PageContentContainer>{children}</PageContentContainer>
     </LayoutContainer>
-  );
- }
+  )
+}
 
- export default PageLayout;
+export default PageLayout

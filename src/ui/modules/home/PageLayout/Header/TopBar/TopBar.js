@@ -1,12 +1,9 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import {
-  ContainerStyled as Container,
-  LinkStyled as Link
-} from './styled';
+import React from 'react'
+import { useSelector } from 'react-redux'
+import { ContainerStyled as Container, LinkStyled as Link } from './styled'
 
 const TopBar = () => {
-  const user = useSelector(state => state.auth.user);
+  const user = useSelector((state) => state.auth.user)
 
   if (user) {
     return (
@@ -23,4 +20,4 @@ const TopBar = () => {
   )
 }
 
-export default TopBar;
+export default TopBar

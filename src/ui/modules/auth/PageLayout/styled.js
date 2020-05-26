@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const LayoutContainerStyled = styled.div`
   width: 100%;
   background: url('/imgs/splashbkg.svg') 50% 50%;
   overflow: hidden;
-`;
+`
 
 export const PageContentContainerStyled = styled.div`
   width: 100%;
@@ -12,5 +12,5 @@ export const PageContentContainerStyled = styled.div`
   margin: 200px auto 80px auto;
   position: relative;
   background-color: white;
-  border: 1px solid #4B77BE;
-`;
+  border: 1px solid #4b77be;
+`

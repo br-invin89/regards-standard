@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import PageLayout from 'ui/modules/auth/PageLayout';
-import LoadInit from './LoadInit';
-import LoginForm from './LoginForm';
+import PageLayout from 'ui/modules/auth/PageLayout'
+import LoadInit from './LoadInit'
+import LoginForm from './LoginForm'
 
 class LoginPage extends React.PureComponent {
   render() {
@@ -15,4 +15,4 @@ class LoginPage extends React.PureComponent {
   }
 }
 
-export default LoginPage;
+export default LoginPage

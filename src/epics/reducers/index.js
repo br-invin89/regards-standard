@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux';
-import apiReducer from './api';
-import authReducer from './auth';
+import { combineReducers } from 'redux'
+import apiReducer from './api'
+import authReducer from './auth'
 
-const rootReducer=combineReducers({
+const rootReducer = combineReducers({
   api: apiReducer,
-  auth: authReducer
+  auth: authReducer,
 })
 
-export default rootReducer;
+export default rootReducer

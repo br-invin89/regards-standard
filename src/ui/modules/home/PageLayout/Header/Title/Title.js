@@ -1,12 +1,8 @@
-import React from 'react';
-import { TitleContainerStyled as TitleContainer } from './styled';
+import React from 'react'
+import { TitleContainerStyled as TitleContainer } from './styled'
 
 const Title = () => {
-  return (
-    <TitleContainer level={4}>
-      Regards!
-    </TitleContainer>
-  )
+  return <TitleContainer level={4}>Regards!</TitleContainer>
 }
 
-export default Title;
+export default Title

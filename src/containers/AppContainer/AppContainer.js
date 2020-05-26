@@ -1,6 +1,6 @@
-import React from 'react';
-import AppRoutes from './routes';
-import 'antd/dist/antd.css';
+import React from 'react'
+import AppRoutes from './routes'
+import 'antd/dist/antd.css'
 
 const AppContainer = ({ children, ...props }) => {
   return (
@@ -8,7 +8,7 @@ const AppContainer = ({ children, ...props }) => {
       <AppRoutes />
       {children}
     </div>
-  )  
+  )
 }
 
-export default AppContainer;
+export default AppContainer

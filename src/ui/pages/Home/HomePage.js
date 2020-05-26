@@ -1,7 +1,7 @@
-import React from 'react';
-import PageLayout from 'ui/modules/home/PageLayout';
-import LoadInit from './LoadInit';
-import TopArticles from './TopArticles';
+import React from 'react'
+import PageLayout from 'ui/modules/home/PageLayout'
+import LoadInit from './LoadInit'
+import TopArticles from './TopArticles'
 
 class HomePage extends React.PureComponent {
   render() {

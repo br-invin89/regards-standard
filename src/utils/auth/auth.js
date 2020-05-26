@@ -1,14 +1,14 @@
-import cookie from 'react-cookies';
+import cookie from 'react-cookies'
 
 export const getToken = () => {
-  const token = cookie.load('regard-auth-token');
-  return token;
+  const token = cookie.load('regard-auth-token')
+  return token
 }
 
 export const saveToken = (token) => {
-  cookie.save('regard-auth-token', token, { path: '/'} );
+  cookie.save('regard-auth-token', token, { path: '/' })
 }
 
 export const removeToken = () => {
-  cookie.remove('regard-auth-token', { path: '/' });
+  cookie.remove('regard-auth-token', { path: '/' })
 }

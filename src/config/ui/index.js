@@ -1,7 +1,4 @@
-import * as colors from './colors';
-import * as fontSizes from './fontSizes';
+import * as colors from './colors'
+import * as fontSizes from './fontSizes'
 
-export {
-  colors,
-  fontSizes
-}
+export { colors, fontSizes }

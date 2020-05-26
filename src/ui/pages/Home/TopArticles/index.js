@@ -1,3 +1,3 @@
-import TopArticles from './TopArticles';
+import TopArticles from './TopArticles'
 
-export default TopArticles;
+export default TopArticles

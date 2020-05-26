@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 // import { Button, H1 } from 'ui/elements'
-import { Button } from 'antd';
+import { Button } from 'antd'
 
 const TopArticles = () => {
   return (
@@ -13,9 +13,9 @@ const TopArticles = () => {
       <Button submit disabled>Submit Button</Button>
       <Button submit small>Small Button</Button>
       */}
-      <Button type='primary'>Submit</Button>
+      <Button type="primary">Submit</Button>
     </React.Fragment>
   )
 }
 
-export default TopArticles;
+export default TopArticles

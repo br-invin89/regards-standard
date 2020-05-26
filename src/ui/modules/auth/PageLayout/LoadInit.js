@@ -1,18 +1,15 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { getToken } from 'utils/auth';
+import React from 'react'
+import { useHistory } from 'react-router-dom'
+import { getToken } from 'utils/auth'
 
 const LoadInit = () => {
   // check logged in
-  const history = useHistory();
+  const history = useHistory()
   if (getToken()) {
-    history.push('/');
+    history.push('/')
   }
 
-  return (
-    <>
-    </>
-  )
+  return <></>
 }
 
-export default LoadInit;
+export default LoadInit
