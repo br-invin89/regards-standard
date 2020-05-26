@@ -21,13 +21,13 @@ const callApi = (method, needAuth, path, data, doneCallback, failCallback) => {
   }
   store.dispatch({ type: 'api.API_STARTED' });
   let axiosCall;
-  if (method=='POST') {
+  if (method==='POST') {
     if (needAuth) {
       axiosCall = axios.post(`${baseUrl}${path}`, data, options);
     } else {
       axiosCall = axios.post(`${baseUrl}${path}`, data);
     }    
-  } else if (method=='GET') {
+  } else if (method==='GET') {
     if (needAuth) {
       axiosCall = axios.get(`${baseUrl}${path}`, options);
     } else {

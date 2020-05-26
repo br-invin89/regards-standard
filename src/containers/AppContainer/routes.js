@@ -5,7 +5,7 @@ import {
 
 import HomePage from 'ui/pages/Home';
 import LoginPage from 'ui/pages/auth.Login';
-import LogoutFunc from 'ui/pages/auth.Login/LogoutFunc';
+import LogoutFunc from 'ui/modules/auth/Logout';
 
 const AppRouters = () => (
   <BrowserRouter>

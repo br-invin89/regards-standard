@@ -5,10 +5,10 @@ import {
 } from './styled';
 import LoadInit from './LoadInit';
 
-const AuthPageLayout = ({ children, ...props }) => {
+const PageLayout = ({ children, ...props }) => {
 
   return (
-    <LayoutContainer>
+    <LayoutContainer {...props}>
       <LoadInit />
       <PageContentContainer>
         {children}
@@ -17,4 +17,4 @@ const AuthPageLayout = ({ children, ...props }) => {
   );
  }
 
- export default AuthPageLayout;
+ export default PageLayout;

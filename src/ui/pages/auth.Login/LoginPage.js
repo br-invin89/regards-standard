@@ -1,16 +1,16 @@
 import React from 'react';
 
-import AuthPageLayout from 'ui/containers/AuthPageLayout';
+import PageLayout from 'ui/modules/auth/PageLayout';
 import LoadInit from './LoadInit';
 import LoginForm from './LoginForm';
 
 class LoginPage extends React.PureComponent {
   render() {
     return (
-      <AuthPageLayout>
+      <PageLayout>
         <LoadInit />
         <LoginForm />
-      </AuthPageLayout>
+      </PageLayout>
     )
   }
 }

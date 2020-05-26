@@ -5,14 +5,14 @@ const initialState = {
 }
 
 export default createReducer(initialState, {
-  ['auth.SET_LOGGED_IN'] (state, action) {
+  [`auth.SET_LOGGED_IN`] (state, action) {
     const { user } = action.payload;
     return {
       ...state,
       user
     }
   },
-  ['auth.LOGOUT'] (state, action) {
+  [`auth.LOGOUT`] (state, action) {
   	return {
   		...state,
   		user: undefined
